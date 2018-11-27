@@ -9,7 +9,8 @@ def reallocate (blocks):
         blocks[(i+j+1)%len(blocks)] += n // len(blocks) + (1 if j<r else 0)
 
 blocks = [0, 2, 7, 0]
-blocks = [0, 5, 10, 0, 11, 14, 13, 4, 11, 8, 8, 7, 1, 4, 12, 11]
+#blocks = [0, 5, 10, 0, 11, 14, 13, 4, 11, 8, 8, 7, 1, 4, 12, 11]
+blocks = [14,0,15,12,11,11,3,5,1,6,8,4,9,1,8,4]
 states = []
 
 while True:

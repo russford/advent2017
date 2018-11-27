@@ -39,14 +39,14 @@ class Grid (object):
         if self.grid[x][y] != 0:
             raise ValueError ("grid {},{} has already been calculated: {}".format(x,y,self.grid[x][y]))
         self.grid[x][y] = sum([sum([self.g(i,j) for j in [y-1, y, y+1]]) for i in [x-1, x, x+1]])
-        print ("{}, {} now {}".format(x,y,self.grid[x][y]))
+        #print ("{}, {} now {}".format(x,y,self.grid[x][y]))
         return self.grid[x][y]
 
     def calc (self):
         return self.calc_at(self.cx, self.cy)
 
     def walk (self, dirn):
-        print("walking from {},{} by {}".format(self.cx, self.cy, dirn))
+        #print("walking from {},{} by {}".format(self.cx, self.cy, dirn))
         self.cx += dirn[0]
         self.cy += dirn[1]
 
@@ -72,4 +72,5 @@ def do_grid (n, target):
 def part2 ():
     do_grid(11,277678)
 
+#part1()
 part2()

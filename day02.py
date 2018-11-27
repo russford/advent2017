@@ -26,6 +26,7 @@ with open("day02.txt") as f:
     puz_inp = [[int(p) for p in l.split()] for l in f.readlines()]
 
 print (checksum_pt2(test_inp_2))
+print (checksum_pt1(puz_inp))
 print (checksum_pt2(puz_inp))
 
 
